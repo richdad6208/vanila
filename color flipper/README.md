@@ -4,4 +4,4 @@
 
 ## 시연영상
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hQhNIbneS-8?si=oPSHb5kvswBHh_qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![컬러 플리퍼](https://img.youtube.com/vi/hQhNIbneS-8/0.jpg)](https://www.youtube.com/watch?v=hQhNIbneS-8)
