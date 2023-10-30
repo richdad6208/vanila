@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Todo List Board</h1>
+    <div class="container">
+      <form class="formInHead">
+        <div class="input-wrapper">
+          <input class="searchInput" type="text" placeholder="검색" />
+          <button class="input__button">검색</button>
+        </div class="input-wrapper">
+        <div class="input-wrapper">
+          <input class="addTodoInput" type="text" placeholder="투두리스트 추가" />
+          <button class="input__button addTodoButton">추가</button>
+        </div>
+      </form>
+      <div class="todo">
+        <ul class="todo__list">
+          <li class="todo__item">
+            야호<span class="todo__delete">❌</span>
+          </li>
+          <li class="todo__item">
+            상상<span class="todo__delete">❌</span>
+          </li>
+        </ul>
+      </div>
+      <div class="pagenation">
+        <span class="pagenation__number active">1</span>
+      </div>
+    </div>
+    <script src="./script/App.js"></script>
+  </body>
+</html>
