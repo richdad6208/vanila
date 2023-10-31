@@ -1,0 +1,73 @@
+:root {
+  --crl-blue: dodgerblue;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5f8;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.card {
+  width: 80%;
+  background: white;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 30px;
+}
+
+.card img {
+  border-radius: 100%;
+}
+.name {
+  font-weight: bold;
+}
+.job {
+  color: var(--crl-blue);
+}
+.description {
+  width: 50ch;
+  word-break: keep-all;
+  text-align: center;
+}
+.arrow-wrapper {
+  display: flex;
+  gap: 40px;
+}
+button {
+  background: #cdf1ff;
+  color: var(--crl-blue);
+  border: 1px solid var(--crl-blue);
+  padding: 0.3em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0.5px black;
+}
