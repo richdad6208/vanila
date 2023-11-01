@@ -14,7 +14,7 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 img {
@@ -30,16 +30,23 @@ body {
   background: #f1f5f8;
 }
 
+ul {
+  width: 100%;
+  position: relative;
+}
+
 .title {
   font-size: 50px;
   font-weight: bold;
 }
 
 .card {
+  margin-inline: auto;
+  margin-top: 50px;
   width: 80%;
   background: white;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
   padding-block: 30px;
@@ -47,6 +54,9 @@ body {
 
 .card img {
   border-radius: 100%;
+}
+.hidden {
+  display: none;
 }
 .name {
   font-weight: bold;
