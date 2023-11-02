@@ -36,11 +36,25 @@ ul {
 }
 
 .title {
+  position: relative;
   font-size: 50px;
   font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.title::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 80px;
+  height: 3.5px;
+  background: dodgerblue;
+  top: 110%;
+  left: 38%;
 }
 
 .card {
+  position: relative;
   margin-inline: auto;
   margin-top: 50px;
   width: 80%;
@@ -51,8 +65,33 @@ ul {
   align-items: center;
   padding-block: 30px;
 }
+.card::before,
+.card::after {
+  position: absolute;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: dodgerblue;
+  content: "";
+}
+.card::before {
+  content: "" url("./images/icon-quote.png");
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  left: 40%;
+  top: 5%;
+  z-index: 3;
+}
+.card::after {
+  width: 150px;
+  height: 150px;
+  left: 41%;
+  bottom: 69%;
+}
 
 .card img {
+  z-index: 2;
   border-radius: 100%;
 }
 .hidden {
@@ -80,4 +119,10 @@ button {
   padding: 0.3em;
   border-radius: 10px;
   box-shadow: 1px 1px 0.5px black;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
 }

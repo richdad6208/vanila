@@ -31,30 +31,37 @@ function displayOne(currentIndex) {
   });
 }
 
-function handleMove(e) {
-  console.log(e);
-  if (e.target.closest(".prev")) {
-    if (currentIndex > 0) currentIndex--;
-    console.log("hi");
-    displayOne(currentIndex);
-  }
+function handleArrowButton(e) {
   if (e.target.closest(".next")) {
     if (currentIndex < totalIndex) currentIndex++;
     displayOne(currentIndex);
   }
-  return;
+  if (e.target.closest(".prev")) {
+    if (currentIndex > 0) currentIndex--;
+    displayOne(currentIndex);
+  }
+}
+
+function handleRandomButton(e) {
+  if (e.target.closest("button")) {
+    const randomNumber = Math.floor(Math.random() * person.length);
+    displayOne(randomNumber);
+  }
+}
+
+function handleEveryButton(e) {
+  handleArrowButton(e);
+  handleRandomButton(e);
 }
 
 const $list = document.querySelector(".list");
 const totalIndex = person.length - 1;
-const START_INDEX = 0;
 let currentIndex = 0;
-const $arrow = document.querySelector(".arrow-wrapper");
 
 function App() {
+  window.addEventListener("click", handleEveryButton);
   getListFromArray();
   displayOne(currentIndex);
-  $arrow.addEventListener("click", handleMove);
 }
 
 App();
