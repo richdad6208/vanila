@@ -5,3 +5,4 @@
 - Surprise Me 버튼을 누르면 랜덤으로 나타납니다.
 
 ### 시연영상
+<img src="https://github.com/richdad6208/vanila/assets/126126067/5d3848c5-a418-4f4c-ba2e-14927b6ab0e8" width="50%"/>
