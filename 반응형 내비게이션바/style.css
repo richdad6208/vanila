@@ -1,0 +1,79 @@
+/* variables */
+:root {
+  --crl-blue: dodgerblue;
+  --crl-pink: plum;
+  --crl-red: crimson;
+
+  --pri-ff: "Manrope", sans-serif;
+}
+/* reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* general style */
+body {
+  font-family: var(--pri-ff);
+  letter-spacing: 2.5px;
+  background: rgba(30, 143, 255, 0.062);
+}
+
+.header {
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.199);
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 30px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.205);
+}
+.accent {
+  color: var(--crl-blue);
+}
+.nav-list {
+  display: flex;
+}
+
+@media (max-width: 940px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+.nav-list > li > a {
+  padding: 1rem;
+}
+.social-list {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+@media (max-width: 940px) {
+  .social-list {
+    display: none;
+  }
+}
+h {
+  color: #1e90ff;
+}
