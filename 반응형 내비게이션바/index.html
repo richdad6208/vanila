@@ -14,7 +14,17 @@
     <header class="header">
       <div class="header-wrapper">
         <h1 class="logo">Coding <span class="accent">Addict</span></h1>
-        <nav class="primary-navigation">
+        <button class="nav-toggle" aria-controls="primary-navigation">
+          <img src="./images/icon-hamburger.png" alt="" /><span
+            class="visually-hidden"
+            >menu</span
+          >
+        </button>
+        <nav
+          class="primary-navigation"
+          id="primary-navigation"
+          data-expanded="true"
+        >
           <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -51,5 +61,6 @@
         </ul>
       </div>
     </header>
+    <script src="./main.js"></script>
   </body>
 </html>
