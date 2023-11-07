@@ -1,5 +1,6 @@
 function handleClick() {
   $navigation.toggleAttribute("data-expanded");
+  $navToggle.toggleAttribute("data-expanded");
 }
 
 $navToggle = document.querySelector(".nav-toggle");
