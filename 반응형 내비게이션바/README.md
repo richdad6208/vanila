@@ -4,4 +4,6 @@
 
 ### 시연영상
 
-<img src="https://github.com/richdad6208/vanila/assets/126126067/c2939492-b2a6-482c-8c5a-6cbb18df85dc" alt="" width="100%"/>
+<img src="https://github.com/richdad6208/vanila/assets/126126067/27585cbe-67d1-4d0d-917e-49e0278f0055" alt="" width="50%"/>
+
+
